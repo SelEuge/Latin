@@ -1,0 +1,594 @@
+@CHARSET "ISO-8859-1";
+*{	padding:0px;
+	margin: 0px;
+	background-image:'animacion/fondoPantalla.jpg';
+	/*background-image: C:\xampplite\htdocs\latinpercusion2parte\animacion\fondoPantalla.jpg;*/
+    /*background-color: red;*/
+}
+
+#contenedor{
+	margin: auto;/*centra automáticamente la caja a la pantalla*/
+	width: 950px;/*ancho*/
+	height: 820px;/*altura*/
+	border: solid 1px;
+	position: relative;
+}
+
+#encabezado{
+	padding:0px;
+	/*width: 100%;*/
+	height: 100px;
+	border-bottom: solid 1px;/*dibuja la línea de división entre el encabezado y el área de navegación*/
+	padding-top: 20px;/*aleja 20pixeles de la parte superior o borde del encabezado*/	
+	background-color: black;
+	position: relative;
+	
+}
+
+#encabezado img{
+	position: absolute;
+}
+
+#btn{
+	position: absolute;
+	right: 10px;
+	color: #f2f2f2; 	
+	border-radius: 3px;
+	color: white;	
+	font-size: 12px;
+	font-family: sans-serif;
+}
+
+#btn a{/*BOTON REGISTRARSE*/	
+	padding:5px;
+	text-decoration: none;
+	margin-right: 10px;
+	border-radius: 3px;
+	
+}
+#btn input{/*BOTON INICIAR SESION*/
+	padding:5px;
+	color: #f2f2f2;  
+	border-radius: 3px;
+	border:0px;	
+	color: white;	
+	font-size: 12px;
+	background-color:#19376A;
+}
+
+#btn a{	/*BOTON CERRAR SESION*/
+	padding:5px 10px;
+	text-decoration: none;
+	color: #f2f2f2;  
+	background-color:#19376A;
+	border-radius: 3px;
+	color: white;	
+	font-size: 12px;
+	font-family: sans-serif;
+}
+#btn2 a{	/*BOTON DAR DE BAJA*/
+	padding:5px;
+	text-decoration: none;
+	color: #f2f2f2;  	
+	font-size: 12px;
+	font-family: sans-serif;
+	width:150px;	 	
+	border-radius: 3px;
+	color: white;	
+	background-color: #19376A;
+}
+/********************************************************************************************/
+#menu{
+	/*background:orange;*/
+	width: auto;
+	height: 40px;
+	margin:0px 0px 0px 13px;
+	
+}
+ul,ol{
+	list-style: none;
+}
+
+#navi li a{
+	border:solid 1px;
+	border-radius:5px;
+	text-align: center;
+	/*background-color:#303030;*/
+	background-color:#19376A;
+	color: white;
+    text-decoration: none;/*sin subrayado*/ 
+    padding: 5px 10px;
+    display: block;/*para que no se suporpongan los submenu*/
+    font-family: arial;
+    /*box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 3px 2px;*/
+    /*background: transparent;*/
+       }
+
+#navi li a img{
+	width: 15px;
+	height: 15px;
+}
+#navi li a:hover{
+	background-color: grey;/*al pasar el mouse que cambie de color la opcion donde se encuentra el puntero*/	
+}
+
+#navi > li{/*son los elementos "<li>" directos*//*VERRRRR XQ NO CAMBIA*/
+	float: left;	/*hace flotar al menu horizaontalmente y ordena cada opcion del menu con su correspondiente submenu*/
+	padding-right: 11px;
+}
+
+#navi li ul{/*sublista*/
+	display: none;
+	position:absolute;
+	/*min-height: 140px;*//*minimo de alto da la sublista*/
+	min-width: 168px;/*Es el ancho de la sublista, para que concuerde con la lista que la contiene*/
+}
+
+#navi li:hover > ul {
+	display: block;
+	z-index: 999 !important;/*MUESTRA SUBLISTA*/
+}
+
+#navi li ul li{
+	right: -140px;
+	top:0px;
+}
+
+/**********************************************************************************************/
+/*MENU CONTENIDO DE COMERCIALIZACION*/
+#contenido{
+	text-align: center;
+	height:583px;
+	border-bottom: solid 1px;
+	background-color: white;
+	padding-top: 20px;
+	position:relative;
+}
+#contenido span{
+	color: white;
+	font-family: arial;
+
+}
+#columIzq{/*pagina de inicio*/
+    width: 400px;
+	height: 400px;
+	box-shadow:5px 5px 5px 5px #939393;       
+	/*position:absolute;*/
+	background-color:#19376A; 
+	margin:20px;
+	padding: 20px;
+	font-family: sans-serif;
+	color:white;
+}
+#columIzqu img{/*pagina de inicio*/
+	padding:50px;
+	width: 250px;
+	height: 150px;
+}
+#columIzqu{/*pagina informacion de contacto*/
+    width: 400px;
+	height: 500px;
+	box-shadow:5px 5px 5px 5px #939393;       
+	/*position:absolute;*/
+	background-color:#19376A; 
+	margin:auto;
+	padding: 20px;
+	font-family: sans-serif;
+	/*text-align:justify;*/
+	color:white;
+}
+#columIzq img{/*pagina informacion de contacto*/
+	padding:50px;
+	width: 250px;
+	height: 150px;
+}
+#columDer{/*En informacion de contacto*/
+   /* border:solid 1px;*/
+    width: 300px;
+	height: 300px;
+	float:right;
+	padding-right: 80px;
+	}
+#contenidoTeryUsos p{
+	margin-left:20px;
+	margin-right:20px;
+	text-align: justify;
+	font-family: arial;
+	font-size:14px;
+	color:black;
+}
+#quienes{/*Para la pagina quienes somos: BARRA DE DESPLAZAMIENTO*/
+	margin:auto;
+	width: 850px;
+	height: 540px;
+	overflow: scroll;/*Activa el scrolling*/
+	overflow-x:hidden;/*Oculta el scrolling inferior*/
+	visibility: visible;/*Muestra el scrolling*/
+	box-shadow:5px 5px 5px 5px #939393;
+	padding: 15px;
+	}
+	
+#quienes p{/*Para el texto de la pag QUIENES SOMOS*/
+	text-align:justify;
+	font-family: arial;	
+	
+}	
+#quienes p font{/*Para el texto de la pag QUIENES SOMOS*/
+	font-size:40px;	
+	/*text-align:center;*/
+	
+}
+#quienes p u{/*Para el texto de la pag QUIENES SOMOS*/
+	font-size:20px;	
+	/*text-align:center;*/
+	
+}
+
+
+
+#contenido img{
+	margin:auto;
+	
+}
+#imagengal{
+	padding-top: 40px;
+}
+/*#imagengal img{
+	height:250px ;
+	width: 250px;
+}*/
+
+
+#menu2{
+	width: 180px;
+	float: left;
+	text-align: left;}
+	
+/*******************************************************************************************/
+/*PROPIEDADES DE LA PAGINA CONSULTA y menu de administracion*/
+#formulario table {
+	/*margin:10px 60px 120px;*/		
+	font-family: sans-serif;
+	color:black;
+	text-align: left;
+	border-spacing: 15px;
+	/*padding: 3px;*/
+	border: 8px solid #999999;
+	border-radius: 5px;	
+	background-color:white;
+
+}
+#formulario fieldset{
+	margin-left:-80px;
+    width:600px;
+	border: solid 1px #939393;
+	border-radius: 5px;	
+	background-color:#19376A;
+}
+#formulario legend{
+	border:solid 1px;
+	border-radius: 5px;	
+	background-color:white; 
+	margin:8px;
+	padding:5px;
+}
+
+#formulario input{/*CELDAS DE LA TABLA DE CONSULTA*/
+	border-radius: 5px;
+	padding-top: 0px;
+}
+
+/************************************************************************************/
+/*Propiedades para la página CONSULTA ONLINE*/
+#btn2{/*BOTON "ENVIAR" DE CONSULTA*/
+    width:150px;	 	
+	border-radius: 10px;
+	color: white;	
+	font-size: 18px;
+	font-family: sans-serif;	
+	background-color: #19376A;
+	
+}
+#btn2a {/*BOTON "cancelar" DE la pag alta*/
+    padding-bottom: 2px;
+    padding-top:2px;
+    padding-left:40px ;
+    padding-right:40px ;   	
+	border-radius: 5px;
+	color: white;	
+	font-size: 18px;
+	font-family: sans-serif;	
+	background-color: #19376A;
+	margin-left: 60px;
+	text-decoration: none;
+	
+}
+#btn2baja{/*BOTON "cancelar" DE la pag alta*/
+    width:150px;	 	
+	border-radius: 10px;
+	color: white;	
+	font-size: 18px;
+	font-family: sans-serif;	
+	background-color: #19376A;
+	margin-left: 120px;
+}
+
+#contacto{
+		width: 400px;
+	    height: 300px;
+	    margin: 20px 0px 0px 250px;	    
+	    padding-top:0px;
+	    font-family: sans-serif;
+	    /*border: solid 1px #939393;
+	    border-radius: 5px;	*/
+}
+#contacto span{
+	color:red;
+	font-family: sans-serif;
+	font-size: 11px;
+	
+
+	}
+
+#contacto p{
+	width:380px;
+	font-family:sans-serif;
+	font-size: 15px;
+	padding-right: 20px;
+	border: solid 7px #939393;
+	border-radius:5px;
+	background-color: #19376A;
+	color: white;
+}		
+
+/*********************************************************************************************/
+#pie{
+	height: 45px;	
+	text-align: center;
+	padding-top: 10px;
+	background-color:#19376A;
+	}
+	
+#pie a{
+	text-decoration: none;
+	color:white;	
+	font-family: arial;
+	/*border:solid 1px;*/
+	}
+#pie img{
+	text-decoration: none;
+	color:white;
+	font-family: arial;
+	float:right;
+	padding-right: 15px;
+	
+	
+	}
+#pie a:hover{
+	color:grey;
+}
+
+/****************************************************/
+
+#formato{
+	width: 250px;
+	height:  150px;
+}
+
+
+#contenido table {
+	margin:auto;
+	border-spacing: 20px;
+}
+
+#contenido #Buscar td {	
+	box-shadow:5px 5px 5px 5px #939393;
+	/*border: solid 1px;
+	padding-left: 10px;*/	
+}
+/*formato para la pantalla de eliminacion*/
+#Eliminar table {
+	margin:auto;
+	border-spacing: 20px;	
+}
+
+#Eliminar td {	
+	box-shadow:5px 5px 5px 5px #939393;
+	/*border: solid 1px;*/
+	font-family: sans-serif;
+	text-align: justify;
+	font-size: 14px;
+	padding-left: 10px;
+		
+}
+/*********************************************************/
+/*Para la pagina descripcion del producto*/
+#especificaciones #o{
+	float:left;
+	font-family: sans-serif;
+	color:white;
+	background:#19376A;
+	text-align: justify;
+	margin:0px 30px 0px 30px;
+	padding-right: 20px;
+	border-radius:5px;
+		
+}
+
+#especificaciones #bajaInst{
+	float:left;
+	margin:0px 30px 0px 30px;
+	font-family: sans-serif;
+	color:white;
+	background:#19376A;
+	text-align: justify;
+	padding-right: 20px;
+	border-radius:5px;
+		
+}
+#especificaciones p{
+	margin-left: 30px;
+}
+
+#especificaciones preg{/*PARA LA PAG "BAJA CONFIRMADA"*/
+	float: right;
+	}
+/***********************************************************************/
+DESCRIPCIONES PARA LA PAGINA REGISTRARSE
+
+#form_contacto{
+	/*margin: 0px 0px 0px 20px;*/
+	text-align: center;
+	padding: 5px;
+	width: 450px;
+	height: 300px;
+	float: left;
+}
+#form_contacto input{
+	padding: 3px 3px 3px 3px;
+	font-family: sans-serif;
+	margin-top: 8px;
+	border-radius:5px;	
+}
+/*AVISA CUANDO FALTAN CAMPOS POR COMPLETAR EN LA REGISTRACION(PAG REGISTRARSE)*/
+#form_contacto span{
+	color:red;
+	font-family: sans-serif;	
+}
+#form_contacto fieldset{
+	padding-top:2px;
+	width: 500px;
+	height: 400px;
+	margin:80px 225px 225px 191px;
+	border-radius: 5px;
+	border: 8px solid #999999;
+	position: relative;
+	
+}
+#form_contacto form{
+	font-family: Arial;
+	font-size: 12px;
+}
+
+
+
+#form_contacto legend{
+	padding: 3px 19px 3px 19px;
+	border: 1px solid #999999;
+	border-radius: 5px;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	color:white;
+	background-color:#19376A;
+}
+
+/***********************************************************************/
+#comercializacion p{
+	font-family: sans-serif;
+	text-align: justify;
+	font-size: 14px;
+	margin:20px 30px 20px 30px;
+}
+/*MENU ADMINISTRACION*/
+#foto{
+	width: 30px;
+	height: 30px;
+	float:right;
+}
+
+/***********************************************************************/
+#contenedorCarrito{
+	margin: auto;/*centra automáticamente la caja a la pantalla*/
+	border: solid 1px;
+	position: relative;
+	/*min-height: 950px;*/
+	height: auto;	
+	width: 950px;/*ancho*/
+}
+
+#contenidoCarrito{
+	text-align: center;
+	min-height:583px;
+	height:auto;
+	border-bottom: solid 1px;
+	background-color: white;
+	padding-top: 20px;
+	position:relative;
+}
+
+/***********************************************************************/
+
+/*ESTILO DEL ADMINISTRADOR*/
+
+header{
+	margin:25px auto;
+	width:1000px;
+	height:230px;
+	background-color: red;
+	
+}
+
+div.contenedorr{
+	width: 200px;
+	height: 230px;
+	float:left;
+	-webkit-transition: height .4s;
+}
+
+div#uno{
+	background-color: rgb(229,204,255);
+}
+
+div#dos{
+	background-color: rgb(204,153,255);
+}
+
+div#tres{
+	background-color: rgb(178,152,255);
+}
+
+div#cuatro{
+	background-color: rgb(204,153,255);
+}
+
+div#cinco{
+	background-color: rgb(229,204,255);
+}
+
+
+
+img.icon{
+	display: block;
+	margin:50px auto;
+	background-color: rgba(255,255,255,.15);
+	width:40px;
+	padding:20px;
+	-webkit-border-radius: 50%;
+	-webkit-box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
+	-webkit-transition:box-shadow .4s;
+}
+
+p.texto{
+	font-size: 1.2em;
+	color:white;
+	text-align: center;
+	padding-top:10px;
+	opacity: .6;
+	-webkit-transition: padding-top .4s;
+}
+
+div.contenedor:hover{
+	height:250px;
+}
+
+div.contenedor:hover p.texto{
+	padding-top: 30px;
+	opacity: 1;
+}
+
+div.contenedor:hover img.icon{
+	-webkit-box-shadow:0px 0px 0px 0px rgba(255,255,255,.6);
+}
+/***********************************************************************/
+/***********************************************************************/

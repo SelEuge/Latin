@@ -1,0 +1,313 @@
+@CHARSET "ISO-8859-1";
+*{	padding:0px;
+	margin: 0px;
+}
+
+#contenedor{
+	margin: auto;/*centra automáticamente la caja a la pantalla*/
+	width: auto;/*ancho*/
+	height: 815px;/*altura*/
+	border: solid 1px;
+}
+
+
+#encabezado{
+	/*width: 100%;*/
+	height: 100px;
+	border-bottom: solid 1px;/*dibuja la línea de división entre el encabezado y el área de navegación*/
+	padding-top: 20px;/*aleja 20pixeles de la parte superior o borde del encabezado*/	
+	text-align: center;
+	background-color: black;
+}
+#encabezado span{
+	color: white;
+	font-size: 30px;
+}
+#encabezado img{
+	height: 100px;
+	width: 100%;	
+}
+
+
+/********************************************************************************************/
+
+#navegacion > ul{
+	width: 100%;
+}
+
+#menu{
+	background:orange;
+	width: auto;
+	height: 50px;
+	margin:auto;
+	
+}
+#navegacion{
+		background-color:color;
+	height: 50px;
+	/*margin-right: 20px;*/
+	text-align: right;
+		
+}
+
+#navi{
+	width:100%;
+	background-color: orange;
+}
+
+#navegacion span{
+	font-weight: bold;
+}
+
+#navegacion a span:hover{
+	color:grey;
+}
+
+ul,ol{
+	list-style: none;	
+}
+
+
+.navi li a{
+	text-align: center;
+	background-color:orange;
+	color:white;
+    text-decoration: none;/*sin subrayado*/ 
+    padding: 15px 15px;
+    display: block;/*para que no se suporpongan los submenu*/
+    font-family: arial;
+ 
+}
+.navi li a:hover{
+	background-color: grey;/*al pasar el mouse que cambie de color la opcion donde se encuentra el puntero*/	
+}
+
+.navi > li{/*son los elementos "<li>" directos*//*VERRRRR XQ NO CAMBIA*/
+	float: left;	/*hace flotar al menu horizaontalmente y ordena cada opcion del menu con su correspondiente submenu*/
+}
+
+.navi li ul{/*sublista*/
+	display: none;
+	position:absolute;
+	/*min-height: 140px;*//*minimo de alto da la sublista*/
+	min-width: 178px;
+}
+
+.navi li:hover > ul {
+	display: block;
+}
+
+.navi li ul li{
+	right: -140px;
+	top:0px;
+}
+
+/**********************************************************************************************/
+/*MENU CONTENIDO DE COMERCIALIZACION*/
+#contenido{
+	text-align: center;
+	height:567px;
+	border-bottom: solid 1px;
+	background-color: black;
+	padding-top: 20px;	
+}
+
+#contenido span{
+	color: white;
+	font-family: arial;
+
+}
+#contenido ul{/**/
+	float:left;
+	color:white;
+	font-family: arial;
+	padding-right: 20px;
+	padding-top: 50px;
+	text-align: left;
+}
+#conteinfo {/*Informacion de contacto*/
+	float:left;
+	color:white;
+	font-family: arial;
+	padding-left: 50px;
+	padding-top: 200px;
+	text-align: left;
+}
+
+#contenido p{
+	margin-left:50px;
+	margin-right:40px;
+	text-align: justify;
+	font-family: arial;
+	font-size:15px;
+	color:white;
+}
+#contenidoprin{text-align: center;
+	height: 567px;
+	border-bottom: solid 1px;
+	background-color: black;
+	padding-top: 20px;	}
+	
+#contenido img{
+	height: 500px;
+	width: 500px;
+}
+#imagengal{
+	padding-top: 40px;
+}
+#imagengal img{
+	height:250px ;
+	width: 250px;
+}
+
+
+#menu2{
+	width: 180px;
+}
+	
+.conte > li{
+	float:rigth;/*hace flotar al menu verticalemente a la izquierda*/
+}
+
+.conte li a{
+	background-color:orange;
+	color:white;
+    text-decoration: none;/*sin subrayado*/ 
+    padding: 15px 15px;
+    display: block;/*para que no se suporpongan los submenu*/
+    font-family: arial;
+ 
+}
+.conte li a:hover{
+	background-color: grey;/*al pasar el mouse
+							 que cambie de color la opcion donde se encuentra 
+							 el puntero*/	
+}
+
+.conte li ul{
+	display: none;
+	position:absolute;
+	min-height: 140px;
+}
+
+.conte li ul li{
+	position: relative;
+}
+.conte li ul li ul{
+	right: 140px;
+	top: 0px;/*para que sirve*/
+}
+
+.conte li:hover > ul {
+	display: block;
+}
+
+.conte li ul li{/*sublista*/
+	right: -180px; /*modifique:  mueve hacia la derecha el submenu*/
+	top:-49px; /*modifique:  mueve hacia arriba el submenu*/
+}
+#contenido ol{
+	float:left;
+	
+}
+#boton{
+	background-color: white;
+}
+
+#contenido img{
+	height:100px ;
+	width: 150px;
+}
+
+#contenido a{
+	color:red;
+	font-size: 15px;
+	float: left;
+}
+/*Propiedades de la tabla de Imagenes*/
+#tabla{
+	margin:auto;
+	margin-top:10px;
+	border: solid 1px;
+	border-color:white;
+	padding: 5px;
+	
+}
+#tabla tr td{
+	border:solid 1px;
+	border-color: white;
+	text-align:center;
+	color: white;
+	pading: 8px;
+}
+
+#tabla img:hover{
+	height:99px ;
+	width: 149px;
+	
+}
+/*******************************************************************************************/
+/*Propiedades de la página COMERCIALIZACION*/
+
+#formulario table {/*Comercializacion formulario de inscripcion*/
+	margin:10px 60px 120px;
+	/*margin:auto;*/
+	background-color: orange;
+	font-family: arial;
+	color:white;
+	text-align: left;
+	width: 60%;
+	border-spacing: 15px;
+	padding: 5px;
+	border: solid 1px;
+	
+}
+#formulario table span{/*tamaño para las leyendas de la tabla dentro de span*/
+	font-size: 15px;
+}
+#formulario table tr td label:hover{
+	color:grey;	
+}
+#formulario table tr td label{
+	font-weight:bold; 
+}
+/*Propiedades para la página INFORMACION DE CONTACTO*/
+#contacto{
+		width: 600px;
+	    height: 500px;
+		/*background-color: orange;*/
+		float:right;
+		/*padding-right:10px; */
+	
+		}
+#contacto p{
+	font-size: 18px;
+	padding-right: 20px;
+	
+}		
+
+/*********************************************************************************************/
+#pie{
+	height: 45px;
+	background-color: orange;	
+	text-align: center;
+	padding-top: 10px;
+	
+	}
+#pie a{
+	text-decoration: none;
+	color:white;
+	font-family: arial;
+	}
+#pie img{
+	text-decoration: none;
+	color:white;
+	font-family: arial;
+	float:right;
+	padding-right: 15px;
+	
+	
+	}
+#pie a:hover{
+	color:grey;
+}
